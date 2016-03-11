@@ -42,10 +42,9 @@ module.exports = DrivenObject.compose({
         });
 
         // run driven initializers
-        return this.__container.loadModuleDirectory('driven/initializers')
+        return this.__container.loadModuleDirectory('initializers')
             .then((initializers) => { return this._runInitializers(initializers); })
             // run app initializers
-            .then(() => { return this.__container.loadModuleDirectory('initializers'); })
             .then((initializers) => { return this._runInitializers(initializers); })
             .then(() => { this._mount(); })
             .catch((e) => {

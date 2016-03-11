@@ -22,7 +22,16 @@
   "bundledDependencies": [],
   "devDependencies": {},
   "dependencies": {
+    "blocked": "^1.2.1",
+    "body-parser": "^1.15.0",
+    "bookshelf": "^0.9.2",
+    "compression": "^1.6.1",
+    "dag-map": "^1.0.2",
+    "express": "^4.13.4",
+    "knex": "^0.10.0",
+    "method-override": "^2.3.5",
     "rsvp": "^3.1.0",
+    "socket.io": "^1.4.5",
     "standard-http-error": "^1.1.1"
   }
 }

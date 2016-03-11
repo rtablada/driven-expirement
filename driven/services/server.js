@@ -29,8 +29,8 @@ module.exports = ContainerObject.compose({
         }
 
         const options = {
-            key: this.container.lookupSync('key.pem'),
-            cert: this.container.lookupSync('cert.pem')
+            // key: this.container.lookupSync('key.pem'),
+            // cert: this.container.lookupSync('cert.pem')
         };
 
         this.https = https.createServer(options, this.express);
